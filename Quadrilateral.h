@@ -12,10 +12,10 @@ public:
     Quadrilateral(Point, Point, Point, Point);
     virtual ~Quadrilateral() {};
 
-    virtual void draw();
-    virtual std::string getName();
-    virtual double getArea();
-    virtual double getPerimeter();
+    void draw() override;
+    std::string getName() override;
+    double getArea() override;
+    double getPerimeter();
 
 private:
     void setPerimeter();

@@ -26,5 +26,9 @@ set(project_sources
     main.cpp
 )
 
+#link_directories("C:\\Users\\Sergei\\source\\repos\\Sergei40\\Shapes\\SFML\\lib")
+link_directories("C:\\Users\\Sergei\\Downloads\\SFML-2.5.1\\bin")
+
 add_executable(${PROJECT_NAME} ${project_sources})
-target_link_libraries(${PROJECT_NAME} -lsfml-graphics -lsfml-window -lsfml-system)
+include_directories("C:\\Users\\Sergei\\Downloads\\SFML-2.5.1\\include")
+target_link_libraries(${PROJECT_NAME} sfml-graphics-d-2 sfml-window-d-2 sfml-system-d-2 openal32)

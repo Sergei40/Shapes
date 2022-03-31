@@ -27,7 +27,8 @@ double Rectangle::getArea(){
 }
 
 void Rectangle::draw() {
-    sf::RenderWindow window(sf::VideoMode(200, 200), name);
+
+   sf::RenderWindow window(sf::VideoMode(200, 200), name);
     while (window.isOpen())
     {
       sf::Event event;
